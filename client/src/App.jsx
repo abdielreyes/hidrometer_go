@@ -6,7 +6,7 @@ function App() {
 			<h1>Hello World</h1>
 			<button
 				onClick={async () => {
-					const res = await fetch("http://localhost:3000/users");
+					const res = await fetch("/users");
 					const data = await res.json();
 					console.log(data);
 				}}>
